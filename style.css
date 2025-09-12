@@ -255,6 +255,22 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   text-align: center;
 }
 
+/* 카드 밖으로 그림자/모서리가 새는 경우 방지 */
+.project-card{ overflow: hidden; }
+
+/* 원하는 만큼 안쪽으로 들여쓰기(전역 기본값) */
+:root{
+  --media-offset-right: 10px; /* 오른쪽에서 안쪽으로 띄우기 */
+  --media-offset-top: 6px;    /* 위에서 안쪽으로 띄우기 */
+}
+
+/* 미디어 박스: 살짝 안쪽으로 들여쓰기 */
+.project-media{
+  /* 기존에 width:100% 가 있다면 제거하고 아래 두 줄로 교체 */
+  max-width: calc(100% - var(--media-offset-right));
+  margin: var(--media-offset-top) var(--media-offset-right) 0 0; /* top right bottom left */
+}
+
 /* ========== Responsive ========== */
 /* Tablet */
 @media (max-width: 1024px){
@@ -300,4 +316,5 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   :root{ --header-h: 104px; }    /* 네비가 살짝 높아질 때 여유 */
   .nav a{ font-size: .9rem; padding: 6px 8px; }
 }
+
 
