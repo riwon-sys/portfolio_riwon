@@ -141,107 +141,118 @@
         </div>
     </section>
 
-    <!-- ========== 프로젝트 ========== -->
+  <!-- ========== 프로젝트 ========== -->
 <section id="projects" class="section gray">
   <div class="container">
     <h2 class="section-title">프로젝트</h2>
 
     <!-- AssetKeeper -->
     <article class="project-card">
-      <header class="project-header">
-        <h3>AssetKeeper (개인 프로젝트)</h3>
-        <span class="project-meta">Java, JSP, MVC, MySQL</span>
-      </header>
+      <div class="project-content">
+        <header class="project-header">
+          <h3>AssetKeeper (개인 프로젝트)</h3>
+          <span class="project-meta">Java, JSP, MVC, MySQL</span>
+        </header>
 
-      <p class="project-desc">
-        Java·JSP 기반의 웹 애플리케이션으로 CRUD 기능을 직접 설계/구현했습니다.
-        요청 → 컨트롤러 → DAO → DB 연동 흐름을 경험하며 실무 감각을 키웠고,
-        MVC 구조의 장단점을 체감하며 DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
-      </p>
+        <p class="project-desc">
+          Java·JSP 기반의 웹 애플리케이션으로 CRUD 기능을 직접 설계/구현했습니다.
+          요청 → 컨트롤러 → DAO → DB 연동 흐름을 경험하며 실무 감각을 키웠고,
+          MVC 구조의 장단점을 체감하며 DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
+        </p>
 
-      <ul class="project-points">
-        <li><strong>핵심:</strong> 요청→Controller→DAO→DB CRUD 플로우 정립, MVC 패턴 적용</li>
-        <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
-        <li><strong>배움:</strong> 계층 분리와 의존성 최소화의 필요성, 예외 처리/유효성 체크 중요성</li>
-      </ul>
+        <ul class="project-points">
+          <li><strong>핵심:</strong> 요청→Controller→DAO→DB CRUD 플로우 정립, MVC 패턴 적용</li>
+          <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
+          <li><strong>배움:</strong> 계층 분리와 의존성 최소화의 필요성, 예외 처리/유효성 체크 중요성</li>
+        </ul>
 
-      <!-- 링크 버튼 -->
-      <div class="proj-links">
-        <a class="btn"
-           href="https://github.com/riwon-sys/AssetKeeper"
-           target="_blank"
-           rel="noopener noreferrer">🔗 GitHub 저장소</a>
-        <a class="btn"
-           href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h"
-           target="_blank"
-           rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
+          <a class="btn" href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h" target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        </div>
       </div>
+
+      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 로고">
+        <img src="/imgs/assetkeeper-logo.png"
+             alt="AssetKeeper 로고"
+             loading="lazy"
+             onload="this.parentElement.classList.remove('skeleton')" />
+      </figure>
     </article>
 
     <!-- workplatform -->
     <article class="project-card">
-      <header class="project-header">
-        <h3>workplatform (Spring + React 기반 팀 프로젝트)</h3>
-        <span class="project-meta">Spring Boot, React, JWT, WebSocket, Postman, Talend</span>
-      </header>
+      <div class="project-content">
+        <header class="project-header">
+          <h3>workplatform (Spring + React 기반 팀 프로젝트)</h3>
+          <span class="project-meta">Spring Boot, React, JWT, WebSocket, Postman, Talend</span>
+        </header>
 
-      <p class="project-desc">
-        JWT 인증 기반 사원관리와 실시간 채팅 기능의 백엔드를 구현했습니다.
-        API 명세를 먼저 설계하고, Postman + Talend로 테스트 시나리오를 직접 작성·검증했습니다.
-        오류 응답/토큰 만료/예외 누락 등 문제를 스스로 분석해 문서화하며
-        “안정적인 API 제공” 관점의 품질 사고를 체득했습니다.
-      </p>
+        <p class="project-desc">
+          JWT 인증 기반 사원관리와 실시간 채팅 기능의 백엔드를 구현했습니다.
+          API 명세를 먼저 설계하고, Postman + Talend로 테스트 시나리오를 직접 작성·검증했습니다.
+          오류 응답/토큰 만료/예외 누락 등 문제를 스스로 분석해 문서화하며
+          “안정적인 API 제공” 관점의 품질 사고를 체득했습니다.
+        </p>
 
-      <ul class="project-points">
-        <li><strong>인증/인가:</strong> JWT 토큰 발급·검증, 만료/재발급 플로우, 권한별 접근 제어</li>
-        <li><strong>도메인:</strong> 사원관리 CRUD, 권한 기반 메뉴 노출</li>
-        <li><strong>실시간:</strong> (백엔드) 채팅 메시지 처리(WebSocket), 파일/알림 연계</li>
-        <li><strong>테스트:</strong> 시나리오 기반 API 테스트(오류 코드/예외/경계값), 결과 문서화</li>
-      </ul>
+        <ul class="project-points">
+          <li><strong>인증/인가:</strong> JWT 토큰 발급·검증, 만료/재발급 플로우, 권한별 접근 제어</li>
+          <li><strong>도메인:</strong> 사원관리 CRUD, 권한 기반 메뉴 노출</li>
+          <li><strong>실시간:</strong> (백엔드) 채팅 메시지 처리(WebSocket), 파일/알림 연계</li>
+          <li><strong>테스트:</strong> 시나리오 기반 API 테스트(오류 코드/예외/경계값), 결과 문서화</li>
+        </ul>
 
-      <!-- 링크 버튼 -->
-      <div class="proj-links">
-        <a class="btn"
-           href="https://github.com/riwon-sys/workplatform"
-           target="_blank"
-           rel="noopener noreferrer">🔗 GitHub 저장소</a>
-        <a class="btn"
-           href="https://www.canva.com/design/DAGg1b9yzfk/9-eOBIH8kapHEq6hHYn1vw/view?utm_content=DAGg1b9yzfk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee59600c3b"
-           target="_blank"
-           rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/riwon-sys/workplatform" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
+          <a class="btn" href="https://www.canva.com/design/DAGg1b9yzfk/9-eOBIH8kapHEq6hHYn1vw/view?utm_content=DAGg1b9yzfk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee59600c3b"
+             target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        </div>
       </div>
+
+      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="workplatform 로고">
+        <img src="/imgs/workplatform-logo.png"
+             alt="workplatform 로고"
+             loading="lazy"
+             onload="this.parentElement.classList.remove('skeleton')" />
+      </figure>
     </article>
 
     <!-- devconnect -->
     <article class="project-card">
-      <header class="project-header">
-        <h3>devconnect (Spring + React + Flutter 팀 협업)</h3>
-        <span class="project-meta">Spring Boot, React(Admin Web), Flutter(App), REST API</span>
-      </header>
+      <div class="project-content">
+        <header class="project-header">
+          <h3>devconnect (Spring + React + Flutter 팀 협업)</h3>
+          <span class="project-meta">Spring Boot, React(Admin Web), Flutter(App), REST API</span>
+        </header>
 
-      <p class="project-desc">
-        이전 프로젝트의 부족했던 React 역량을 보완하기 위해 관리자 전용 Admin Web을 전담 구현했습니다.
-        기존 백엔드 코드를 수정하지 않고 DTO/Entity를 분석해 필요한 기능만 추출·호환했으며,
-        팀의 기존 흐름을 해치지 않는 구조로 독립 기능을 성공적으로 제공했습니다.
-      </p>
+        <p class="project-desc">
+          이전 프로젝트의 부족했던 React 역량을 보완하기 위해 관리자 전용 Admin Web을 전담 구현했습니다.
+          기존 백엔드 코드를 수정하지 않고 DTO/Entity를 분석해 필요한 기능만 추출·호환했으며,
+          팀의 기존 흐름을 해치지 않는 구조로 독립 기능을 성공적으로 제공했습니다.
+        </p>
 
-      <ul class="project-points">
-        <li><strong>프론트:</strong> Admin 전용 UI(목록/상세/수정/삭제), JWT 연동, 라우팅 보호</li>
-        <li><strong>백엔드 연동:</strong> 기존 DTO/Entity 분석 후 필요한 API만 호환 구현</li>
-        <li><strong>협업:</strong> 변경 최소화 원칙, PR/리뷰로 충돌 방지, 문서화 정비</li>
-      </ul>
+        <ul class="project-points">
+          <li><strong>프론트:</strong> Admin 전용 UI(목록/상세/수정/삭제), JWT 연동, 라우팅 보호</li>
+          <li><strong>백엔드 연동:</strong> 기존 DTO/Entity 분석 후 필요한 API만 호환 구현</li>
+          <li><strong>협업:</strong> 변경 최소화 원칙, PR/리뷰로 충돌 방지, 문서화 정비</li>
+        </ul>
 
-      <!-- 링크 버튼 -->
-      <div class="proj-links">
-        <a class="btn"
-           href="https://github.com/riwon-sys/ft_project"
-           target="_blank"
-           rel="noopener noreferrer">🔗 GitHub 저장소</a>
-        <a class="btn"
-           href="https://www.canva.com/design/DAGm7UhNL1Q/0Hp-4CnUBg2g2sW9ogTKIg/view?utm_content=DAGm7UhNL1Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ec5deab99"
-           target="_blank"
-           rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/riwon-sys/ft_project" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
+          <a class="btn" href="https://www.canva.com/design/DAGm7UhNL1Q/0Hp-4CnUBg2g2sW9ogTKIg/view?utm_content=DAGm7UhNL1Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ec5deab99"
+             target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        </div>
       </div>
+
+      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="devconnect 로고">
+        <img src="/imgs/devconnect-logo.png"
+             alt="devconnect 로고"
+             loading="lazy"
+             onload="this.parentElement.classList.remove('skeleton')" />
+      </figure>
     </article>
   </div>
 </section>
@@ -293,6 +304,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
