@@ -141,7 +141,7 @@
         </div>
     </section>
 
-  <!-- ========== 프로젝트 ========== -->
+<!-- ========== 프로젝트 ========== -->
 <section id="projects" class="section gray">
   <div class="container">
     <h2 class="section-title">프로젝트</h2>
@@ -156,14 +156,17 @@
 
         <p class="project-desc">
           Java·JSP 기반의 웹 애플리케이션으로 CRUD 기능을 직접 설계/구현했습니다.
-          요청 → 컨트롤러 → DAO → DB 연동 흐름을 경험하며 실무 감각을 키웠고,
-          MVC 구조의 장단점을 체감하며 DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
+          요청 → 컨트롤러 → DAO → DB 연동 흐름을 경험하며 MVC 구조의 장단점을 체감했고,
+          DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
         </p>
 
         <ul class="project-points">
-          <li><strong>핵심:</strong> 요청→Controller→DAO→DB CRUD 플로우 정립, MVC 패턴 적용</li>
+          <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
+          <li><strong>핵심:</strong> Controller→DAO→DB CRUD 플로우 정립, MVC 패턴 적용</li>
           <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
-          <li><strong>배움:</strong> 계층 분리와 의존성 최소화의 필요성, 예외 처리/유효성 체크 중요성</li>
+          <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
+          <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
+          <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리/유효성 검증의 중요성</li>
         </ul>
 
         <div class="proj-links">
@@ -172,10 +175,9 @@
         </div>
       </div>
 
-      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
-      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 로고">
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 프로젝트 로고">
         <img src="./에셋키퍼 로고.jpg" 
-             alt="AssetKeeper 로고"
+             alt="AssetKeeper 프로젝트 로고"
              loading="lazy"
              onload="this.parentElement.classList.remove('skeleton')" />
       </figure>
@@ -191,16 +193,19 @@
 
         <p class="project-desc">
           JWT 인증 기반 사원관리와 실시간 채팅 기능의 백엔드를 구현했습니다.
-          API 명세를 먼저 설계하고, Postman + Talend로 테스트 시나리오를 직접 작성·검증했습니다.
-          오류 응답/토큰 만료/예외 누락 등 문제를 스스로 분석해 문서화하며
-          “안정적인 API 제공” 관점의 품질 사고를 체득했습니다.
+          API 명세를 먼저 설계하고 Postman + Talend로 테스트 시나리오를 작성·검증하며
+          오류 응답/토큰 만료/예외 누락 등 문제를 분석·문서화하여
+          “안정적인 API 제공” 역량을 길렀습니다.
         </p>
 
         <ul class="project-points">
-          <li><strong>인증/인가:</strong> JWT 토큰 발급·검증, 만료/재발급 플로우, 권한별 접근 제어</li>
-          <li><strong>도메인:</strong> 사원관리 CRUD, 권한 기반 메뉴 노출</li>
-          <li><strong>실시간:</strong> (백엔드) 채팅 메시지 처리(WebSocket), 파일/알림 연계</li>
-          <li><strong>테스트:</strong> 시나리오 기반 API 테스트(오류 코드/예외/경계값), 결과 문서화</li>
+          <li><strong>제작기간:</strong> 25-03-04 ~ 25-03-31</li>
+          <li><strong>핵심:</strong> 인증·인가 기반 사원관리 시스템과 실시간 협업 채팅 모듈</li>
+          <li><strong>역할:</strong> 백엔드 개발 (API 명세 작성, JWT 인증 로직, WebSocket 서버 구현, 테스트 자동화)</li>
+          <li><strong>연동/기술:</strong> JWT 인증/인가, WebSocket, Talend·Postman 테스트 시나리오</li>
+          <li><strong>협업:</strong> 팀 내 API 표준화, 테스트 케이스 공유, 코드 리뷰</li>
+          <li><strong>배움:</strong> API 설계 → 테스트 → 예외 처리 전 과정을 경험하며
+              신뢰성 있는 백엔드 제공의 중요성을 체득</li>
         </ul>
 
         <div class="proj-links">
@@ -210,10 +215,9 @@
         </div>
       </div>
 
-      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
-      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="workplatform 로고">
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="workplatform 프로젝트 로고">
         <img src="./워크플랫폼 로고.jpg" 
-             alt="workplatform 로고"
+             alt="workplatform 프로젝트 로고"
              loading="lazy"
              onload="this.parentElement.classList.remove('skeleton')" />
       </figure>
@@ -228,15 +232,18 @@
         </header>
 
         <p class="project-desc">
-          이전 프로젝트의 부족했던 React 역량을 보완하기 위해 관리자 전용 Admin Web을 전담 구현했습니다.
-          기존 백엔드 코드를 수정하지 않고 DTO/Entity를 분석해 필요한 기능만 추출·호환했으며,
-          팀의 기존 흐름을 해치지 않는 구조로 독립 기능을 성공적으로 제공했습니다.
+          React 역량을 강화하기 위해 관리자 전용 Admin Web을 전담 구현했습니다.
+          기존 백엔드 코드를 수정하지 않고 DTO/Entity를 분석해 필요한 기능만 추출·호환하며
+          팀의 흐름을 해치지 않는 구조로 독립 기능을 제공했습니다.
         </p>
 
         <ul class="project-points">
-          <li><strong>프론트:</strong> Admin 전용 UI(목록/상세/수정/삭제), JWT 연동, 라우팅 보호</li>
-          <li><strong>백엔드 연동:</strong> 기존 DTO/Entity 분석 후 필요한 API만 호환 구현</li>
+          <li><strong>제작기간:</strong> 25-04-14 ~ 25-05-11</li>
+          <li><strong>핵심:</strong> 기존 백엔드를 수정하지 않고 Admin 전용 웹을 독립 구현</li>
+          <li><strong>역할:</strong> Admin 전용 화면 개발(목록/상세/수정/삭제), JWT 연동, 라우팅 보호</li>
+          <li><strong>연동/기술:</strong> DTO/Entity 분석 기반 API 호환, React 라우팅·JWT 인증</li>
           <li><strong>협업:</strong> 변경 최소화 원칙, PR/리뷰로 충돌 방지, 문서화 정비</li>
+          <li><strong>배움:</strong> 협업 환경에서 “독립적 기능 구현 + 변경 최소화” 전략의 중요성 체득</li>
         </ul>
 
         <div class="proj-links">
@@ -246,10 +253,9 @@
         </div>
       </div>
 
-      <!-- 오른쪽 이미지: 로고형(1:1) 통일 -->
-      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="devconnect 로고">
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="devconnect 프로젝트 로고">
         <img src="./데브커넥트 로고.jpg" 
-             alt="devconnect 로고"
+             alt="devconnect 프로젝트 로고"
              loading="lazy"
              onload="this.parentElement.classList.remove('skeleton')" />
       </figure>
@@ -304,6 +310,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
