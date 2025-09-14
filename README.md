@@ -1,9 +1,13 @@
 # portfolio_riwon
 
 안녕하세요 👋  
-**본질에 집중하며 성장하는 풀스택 개발자 김리원**입니다.  
+**침착하지만, 끊임없이 성장하며, 본질에 집중하는 개발자 김리원**입니다.  
 Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해  
-**기획 → DB 설계 → 백엔드 → 프론트엔드 → 배포** 전 과정을 주도적으로 수행했습니다.
+**기획 → DB 설계 → 백엔드 → 프론트엔드 → 배포** 전 과정을 주도적으로 수행했습니다.  
+
+![FullStack](https://img.shields.io/badge/Role-FullStack%20Developer-blue?style=for-the-badge&logo=springboot)  
+![QAQC](https://img.shields.io/badge/Role-QA%2FQC%20Engineer-green?style=for-the-badge&logo=react)  
+![Growth](https://img.shields.io/badge/Identity-Always%20Calm%20%26%20Growing-orange?style=for-the-badge&logo=flutter)  
 
 ---
 
