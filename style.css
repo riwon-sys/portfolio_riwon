@@ -265,3 +265,62 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   :root{ --header-h: 104px; }
   .nav a{ font-size: .9rem; padding: 6px 8px; }
 }
+
+/* --- Details 개선 카드 스타일 --- */
+.more--cards { padding: 0; border: none; }
+.more--cards > summary{
+  background: #fff; border: 1px solid var(--card-border);
+  border-radius: 10px; padding: 8px 12px;
+}
+.more--cards[open] > summary{ border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.project-section.card{
+  background: #fff; border: 1px solid var(--card-border);
+  border-top: none; /* summary와 자연스럽게 연결 */
+  border-radius: 0 0 10px 10px;
+  padding: 14px 16px;
+}
+.project-section.card + .project-section.card{
+  margin-top: 10px; border-top: 1px dashed var(--card-border);
+  border-radius: 10px;
+}
+
+/* --- S-A-R(상황/행동/결과) 리스트 --- */
+.sar-list{ counter-reset: step; display: grid; gap: 12px; margin-top: 8px; }
+.sar-list > li{
+  background: var(--chip-bg); border: 1px solid var(--chip-border);
+  border-radius: 10px; padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
+}
+.sar-list > li::before{
+  counter-increment: step; content: "#" counter(step);
+  font-weight: 700; margin-right: 8px; color: #7b8a9b;
+}
+
+.sar{
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 6px 12px;
+  align-items: start;
+}
+.sar__label{
+  font-weight: 700; color: #556070; background: #eef2f6;
+  border: 1px solid #e1e7ef; border-radius: 6px;
+  padding: 2px 8px; text-align: center; line-height: 1.8;
+}
+@media (prefers-color-scheme: dark){
+  .sar__label{ background:#151a22; border-color:#202531; color:#b7c2d0; }
+}
+.sar__text{ color: var(--text-main); }
+
+/* --- KPT 칩 스타일 --- */
+.kpt{ display: grid; gap: 10px; margin-top: 8px; }
+.kpt li{
+  border: 1px solid var(--chip-border); background: var(--chip-bg);
+  border-radius: 10px; padding: 10px 12px;
+}
+.kpt li strong{ display: inline-block; margin-bottom: 4px; }
+.kpt__keep strong{ color: #188038; }     /* ✅ */
+.kpt__problem strong{ color: #d93025; }  /* ⚠️ */
+.kpt__try strong{ color: #1a73e8; }      /* 💡 */
+
