@@ -318,5 +318,93 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 
 
 
+/* ===== Patch: tokens + a11y + mobile order ===== */
+
+/* 1) 변수 일원화: 텍스트/카드/칩 컬러 토큰 */
+:root {
+  --text-main: #2a2f37;
+  --text-sub: #707680;
+  --card-bg: #fff;
+  --card-border: #e6e8eb;
+  --chip-bg: #f6f8fb;
+  --chip-border: #e6e8eb;
+
+  /* 미디어 오프셋 변수(중복된 :root 정리) */
+  --media-offset-right: 10px;
+  --media-offset-top: 6px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --text-main: #e8ecf2;
+    --text-sub: #9aa4b2;
+    --card-bg: #121418;
+    --card-border: #2a2f37;
+    --chip-bg: #171a20;
+    --chip-border: #2a2f37;
+  }
+}
+
+/* 2) 글꼴 스무딩(가독성) */
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-main);
+}
+
+/* 3) 카드 공통 컬러를 토큰 사용으로 정리 */
+.project-card{
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  overflow: hidden; /* 중복 선언 정리 */
+}
+.project-meta{ color: var(--text-sub); }
+.project-desc, .project-points li{ color: var(--text-main); }
+
+/* 4) 버튼도 토큰 사용 */
+.btn{
+  color: var(--text-main);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+.btn:hover{
+  background: var(--chip-bg);
+  border-color: var(--chip-border);
+}
+
+/* 5) 우측 미디어 상단/우측 오프셋 */
+.project-media{
+  max-width: calc(100% - var(--media-offset-right));
+  margin: var(--media-offset-top) var(--media-offset-right) 0 0;
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-border);
+}
+
+/* 6) 모바일에서 미디어를 본문 아래로 */
+@media (max-width: 900px){
+  .project-media{ order: 2; }
+}
+
+/* 7) 스켈레톤 모션 접근성 */
+@media (prefers-reduced-motion: reduce){
+  .project-media.skeleton::after{ animation: none !important; }
+}
+
+/* 8) details/summary(접기/펼치기) 옵션 스타일 */
+.project-card details{ margin-top: 8px; }
+.project-card summary{
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-main);
+  padding: 6px 0;
+  list-style: none;
+}
+.project-card summary::-webkit-details-marker{ display: none; }
+.project-card summary::after{
+  content: "▾";
+  margin-left: 6px;
+  transition: transform .2s ease;
+}
+.project-card details[open] summary::after{ transform: rotate(180deg); }
+
 
 
