@@ -43,8 +43,8 @@ Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해 
 ---
 
 ## 📬 연락처
-- Email: **riwon7317@gmail.com**  
-- GitHub: [github.com/riwon7317](https://github.com/riwon7317)  
+- Email: **lelabo7317@gmail.com**  
+- GitHub: [github.com/riwon-sys](https://github.com/riwon-sys)  
 
 ---
 ✨ 끊임없이 배우고 성장하며, 보이지 않는 곳에서도 묵묵히 최선을 다하는 개발자입니다.
