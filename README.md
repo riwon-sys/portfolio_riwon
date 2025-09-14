@@ -21,19 +21,22 @@ Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해
 
 ## 📌 주요 프로젝트
 
-### 1. ERP SYS (AssetKeeper)
-> 소규모 스타트업용 ERP 시스템  
-- 인사·자산·출결·회계 관리 모듈 설계 및 구현  
-- Spring Boot + MySQL + JSP (초기 버전) → React/Flutter 확장  
+---
+
+### 1. AssetKeeper (비품 관리)
+> Servlet + JSP + DAO 기반 **비품(자산) 관리 모듈**  
+- 비품 등록/조회/수정/삭제(CRUD) 구현  
+- 자산명·분류·수량·사용여부 등 기본 정보 관리
+- JDBC → **Tomcat JNDI DataSource**로 전환해 커넥션 풀 적용
 
 **트러블슈팅 사례**  
-- DB 연결 불안정 → Connection Pool 도입 → CRUD 안정화  
-- 입력값 검증 누락 → Validation 강화 → 사용자 경험 개선  
+- **DB 연결 불안정** → JNDI DataSource(커넥션 풀) + try-with-resources 적용 → **CRUD 안정화**  
+- **입력값 검증 누락** → DTO `validate()` 도입 + 폼 에러 피드백 → **유효성 강화 & UX 개선**
 
 **KPT 회고**  
-- ✅ Keep: 단독 개발 경험, MVC 패턴 이해 심화  
-- ⚠️ Problem: 예외 처리·검증 미흡, DB 안정성 부족  
-- 💡 Try: Spring Boot 전환, 견고한 Validation 구조 설계  
+- ✅ Keep: 단독 설계/구현 경험, JSP/DAO 패턴 숙련  
+- ⚠️ Problem: 초기에 드라이버 직접 연결로 안정성 저하, 검증 로직 분산  
+- 💡 Try: 공통 검증/에러 처리 유틸화, 목록/검색/페이징 등 운영 편의 기능 보강
 
 ---
 
