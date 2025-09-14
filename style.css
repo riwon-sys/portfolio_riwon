@@ -406,5 +406,24 @@ body{
 }
 .project-card details[open] summary::after{ transform: rotate(180deg); }
 
+/* 로고 아래 '자세히 보기' UX 향상 */
+.project-caption { margin-top: 8px; }
+.more > summary {
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  user-select: none;
+}
+.more[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.more > summary::-webkit-details-marker { display: none; } /* 크롬 기본 마커 제거 */
+.more { border: 1px solid #e5e7eb; border-radius: 8px; }
+.more[open] { padding-bottom: 8px; }
+.more .project-section { padding: 10px 12px 0; }
+.more .project-section:last-child { padding-bottom: 8px; }
+
+
 
 
