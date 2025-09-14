@@ -146,147 +146,131 @@
   <div class="container">
     <h2 class="section-title">프로젝트</h2>
 
-   <!-- AssetKeeper -->
-<article class="project-card">
-  <div class="project-content">
-    <header class="project-header">
-      <h3>AssetKeeper (개인 프로젝트)</h3>
-      <span class="project-meta">Java, JSP, MVC, MySQL</span>
-    </header>
+    <!-- ==================== AssetKeeper ==================== -->
+    <article class="project-card">
+      <div class="project-content">
+        <header class="project-header">
+          <h3>AssetKeeper (개인 프로젝트)</h3>
+          <span class="project-meta">Java, JSP, MVC, MySQL</span>
+        </header>
 
-    <p class="project-desc">
-      Java·JSP 기반의 <strong>비품(자산) 관리 CRUD</strong> 웹 애플리케이션을 설계·구현했습니다.<br>
-      요청 → Controller → DAO → DB 연동 흐름을 직접 구축하며 MVC 구조의 장단점을 체감했고,<br>
-      DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
-    </p>
+        <p class="project-desc">
+          Java·JSP 기반의 <strong>비품(자산) 관리 CRUD</strong> 웹 애플리케이션을 설계·구현했습니다.<br>
+          요청 → Controller → DAO → DB 연동 흐름을 직접 구축하며 MVC 구조의 장단점을 체감했고,<br>
+          DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
+        </p>
 
-    <ul class="project-points">
-      <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
-      <li><strong>핵심:</strong> Controller → DAO → DB CRUD 플로우 정립, MVC 패턴 적용</li>
-      <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
-      <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
-      <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
-      <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리 및 유효성 검증의 중요성</li>
-    </ul>
+        <ul class="project-points">
+          <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
+          <li><strong>핵심:</strong> Controller → DAO → DB CRUD 플로우 정립, MVC 패턴 적용</li>
+          <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
+          <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
+          <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
+          <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리 및 유효성 검증의 중요성</li>
+        </ul>
 
-    <h4>트러블슈팅 사례</h4>
-    <ul class="project-points">
-      <li>DB 연결 불안정 → <strong>Connection Pool 도입</strong> → CRUD 안정화</li>
-      <li>입력값 검증 누락 → <strong>Validation 강화</strong> → 사용자 경험 개선</li>
-    </ul>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+          <a class="btn" href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h" target="_blank" rel="noopener noreferrer">📑 발표자료</a>
+        </div>
+      </div>
 
-    <h4>KPT 회고</h4>
-    <ul class="project-points">
-      <li>✅ <strong>Keep:</strong> 단독 개발 경험, MVC 패턴 이해 심화</li>
-      <li>⚠️ <strong>Problem:</strong> 예외 처리·검증 미흡, DB 안정성 부족</li>
-      <li>💡 <strong>Try:</strong> 공통 검증 로직 설계, Connection Pool 적극 활용</li>
-    </ul>
-  </div>
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 프로젝트 로고">
+        <img
+          src="./에셋키퍼 로고.jpg"
+          alt="AssetKeeper 프로젝트 로고"
+          loading="lazy"
+          onload="this.parentElement.classList.remove('skeleton')"
+        />
+        <figcaption class="project-caption">
+          <details class="more">
+            <summary>자세히 보기</summary>
 
-    <div class="proj-links">
-      <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
-      <a class="btn" href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h" target="_blank" rel="noopener noreferrer">📑 발표자료</a>
-    </div>
+            <section class="project-section">
+              <h4>트러블슈팅</h4>
+              <ul class="project-points">
+                <li>DB 연결 불안정 → <strong>JNDI Connection Pool</strong> 적용 → CRUD 안정화</li>
+                <li>입력값 검증 누락 → <strong>DTO validate() + 폼 에러 피드백</strong> → UX 개선</li>
+              </ul>
+            </section>
 
-
-     <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 프로젝트 로고">
-        <img src="./에셋 로고.jpg" 
-             alt="AssetKeeper 프로젝트 로고"
-             loading="lazy"
-             onload="this.parentElement.classList.remove('skeleton')" />
-
-         <details>
-    <summary>자세히 보기</summary>
-    <section class="project-section">
-      <h4>트러블슈팅</h4>
-      <ul class="project-points">
-        <li>DB 연결 불안정 → <strong>JNDI Connection Pool</strong> 적용 → CRUD 안정화</li>
-        <li>입력값 검증 누락 → <strong>DTO validate() + 폼 에러 피드백</strong> → UX 개선</li>
-      </ul>
-    </section>
-
-    <section class="project-section">
-      <h4>KPT 회고</h4>
-      <ul class="project-points">
-        <li>✅ <strong>Keep:</strong> 단독 개발, MVC/DAO 패턴 숙련</li>
-        <li>⚠️ <strong>Problem:</strong> 초기 드라이버 직접연결, 검증 로직 분산</li>
-        <li>💡 <strong>Try:</strong> 공통 검증/에러 처리 유틸화, 검색·페이징 보강</li>
-      </ul>
-    </section>
-</details>
+            <section class="project-section">
+              <h4>KPT 회고</h4>
+              <ul class="project-points">
+                <li>✅ <strong>Keep:</strong> 단독 개발, MVC/DAO 패턴 숙련</li>
+                <li>⚠️ <strong>Problem:</strong> 초기 드라이버 직접연결, 검증 로직 분산</li>
+                <li>💡 <strong>Try:</strong> 공통 검증/에러 처리 유틸화, 검색·페이징 보강</li>
+              </ul>
+            </section>
+          </details>
+        </figcaption>
       </figure>
-</article>
+    </article>
 
-  
+    <!-- ==================== workplatform ==================== -->
+    <article class="project-card">
+      <div class="project-content">
+        <header class="project-header">
+          <h3>workplatform (Spring + React 기반 팀 프로젝트)</h3>
+          <span class="project-meta">Spring Boot, React, JWT, WebSocket, Postman, Talend</span>
+        </header>
 
-   <!-- workplatform -->
-<article class="project-card">
-  <div class="project-content">
-    <header class="project-header">
-      <h3>workplatform (Spring + React 기반 팀 프로젝트)</h3>
-      <span class="project-meta">Spring Boot, React, JWT, WebSocket, Postman, Talend</span>
-    </header>
+        <p class="project-desc">
+          JWT 인증 기반 사원관리와 실시간 채팅 기능의 백엔드를 구현했습니다.
+          API 명세를 먼저 설계하고 Postman + Talend로 테스트 시나리오를 작성·검증하며
+          오류 응답/토큰 만료/예외 누락 등 문제를 분석·문서화하여
+          “안정적인 API 제공” 역량을 길렀습니다.
+        </p>
 
-    <p class="project-desc">
-      JWT 인증 기반 사원관리와 실시간 채팅 기능의 백엔드를 구현했습니다.
-      API 명세를 먼저 설계하고 Postman + Talend로 테스트 시나리오를 작성·검증하며
-      오류 응답/토큰 만료/예외 누락 등 문제를 분석·문서화하여
-      “안정적인 API 제공” 역량을 길렀습니다.
-    </p>
+        <ul class="project-points">
+          <li><strong>제작기간:</strong> 25-03-04 ~ 25-03-31</li>
+          <li><strong>핵심:</strong> 인증·인가 기반 사원관리 시스템과 실시간 협업 채팅 모듈</li>
+          <li><strong>역할:</strong> 백엔드 개발 (API 명세 작성, JWT 인증 로직, WebSocket 서버 구현, 테스트 자동화)</li>
+          <li><strong>연동/기술:</strong> JWT 인증/인가, WebSocket, Talend·Postman 테스트 시나리오</li>
+          <li><strong>협업:</strong> 팀 내 API 표준화, 테스트 케이스 공유, 코드 리뷰</li>
+          <li><strong>배움:</strong> API 설계 → 테스트 → 예외 처리 전 과정을 경험하며 신뢰성 있는 백엔드 제공의 중요성을 체득</li>
+        </ul>
 
-    <ul class="project-points">
-      <li><strong>제작기간:</strong> 25-03-04 ~ 25-03-31</li>
-      <li><strong>핵심:</strong> 인증·인가 기반 사원관리 시스템과 실시간 협업 채팅 모듈</li>
-      <li><strong>역할:</strong> 백엔드 개발 (API 명세 작성, JWT 인증 로직, WebSocket 서버 구현, 테스트 자동화)</li>
-      <li><strong>연동/기술:</strong> JWT 인증/인가, WebSocket, Talend·Postman 테스트 시나리오</li>
-      <li><strong>협업:</strong> 팀 내 API 표준화, 테스트 케이스 공유, 코드 리뷰</li>
-      <li><strong>배움:</strong> API 설계 → 테스트 → 예외 처리 전 과정을 경험하며
-          신뢰성 있는 백엔드 제공의 중요성을 체득</li>
-    </ul>
+        <div class="proj-links">
+          <a class="btn" href="https://github.com/riwon-sys/workplatform" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
+          <a class="btn" href="https://www.canva.com/design/DAGg1b9yzfk/9-eOBIH8kapHEq6hHYn1vw/view?utm_content=DAGg1b9yzfk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee59600c3b" target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
+        </div>
+      </div>
 
-    <div class="proj-links">
-      <a class="btn" href="https://github.com/riwon-sys/workplatform" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
-      <a class="btn" href="https://www.canva.com/design/DAGg1b9yzfk/9-eOBIH8kapHEq6hHYn1vw/view?utm_content=DAGg1b9yzfk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee59600c3b" target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
-    </div>
-  </div>
+      <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="workplatform 프로젝트 로고">
+        <img
+          src="./워크플랫폼 로고.jpg"
+          alt="workplatform 프로젝트 로고"
+          loading="lazy"
+          onload="this.parentElement.classList.remove('skeleton')"
+        />
+        <figcaption class="project-caption">
+          <details class="more">
+            <summary>자세히 보기</summary>
 
-  <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="workplatform 프로젝트 로고">
-    <img
-      src="./워크플랫폼 로고.jpg"
-      alt="workplatform 프로젝트 로고"
-      loading="lazy"
-      onload="this.parentElement.classList.remove('skeleton')"
-    />
+            <section class="project-section">
+              <h4>트러블슈팅</h4>
+              <ul class="project-points">
+                <li>토큰 만료 시 재인증 흐름 누락 → <strong>JWT 필터에서 만료/무효 분기</strong> + <strong>표준 오류 응답 JSON</strong> 정립</li>
+                <li>채팅 연결 끊김 → <strong>WebSocket 핑/퐁 + 재연결 백오프</strong> 적용</li>
+                <li>테스트 중 API 변경 추적 어려움 → <strong>Talend·Postman 시나리오</strong>로 회귀 테스트 자동화</li>
+              </ul>
+            </section>
 
-    <!-- ✅ 로고 아래 펼침 영역 -->
-    <figcaption class="project-caption">
-      <details class="more">
-        <summary>자세히 보기</summary>
+            <section class="project-section">
+              <h4>KPT 회고</h4>
+              <ul class="project-points">
+                <li>✅ <strong>Keep:</strong> 명세 선행 → 테스트 시나리오 기반 개발</li>
+                <li>⚠️ <strong>Problem:</strong> 초기 예외 응답 포맷 불일치</li>
+                <li>💡 <strong>Try:</strong> 공통 예외 핸들러/응답포맷, 부하 테스트 도입</li>
+              </ul>
+            </section>
+          </details>
+        </figcaption>
+      </figure>
+    </article>
 
-        <section class="project-section">
-          <h4>트러블슈팅</h4>
-          <ul class="project-points">
-            <li>토큰 만료 시 재인증 흐름 누락 → <strong>JWT 필터에서 만료/무효 분기</strong> + <strong>표준 오류 응답 JSON</strong> 정립</li>
-            <li>채팅 연결 끊김 → <strong>WebSocket 핑/퐁 + 재연결 백오프</strong> 적용</li>
-            <li>테스트 중 API 변경 추적 어려움 → <strong>Talend·Postman 시나리오</strong>로 회귀 테스트 자동화</li>
-          </ul>
-        </section>
-
-        <section class="project-section">
-          <h4>KPT 회고</h4>
-          <ul class="project-points">
-            <li>✅ <strong>Keep:</strong> 명세 선행 → 테스트 시나리오 기반 개발</li>
-            <li>⚠️ <strong>Problem:</strong> 초기 예외 응답 포맷 불일치</li>
-            <li>💡 <strong>Try:</strong> 공통 예외 핸들러/응답포맷, 부하 테스트 도입</li>
-          </ul>
-        </section>
-
-      </details>
-    </figcaption>
-  </figure>
-</article>
-
-    <!-- devconnect -->
+    <!-- ==================== devconnect ==================== -->
     <article class="project-card">
       <div class="project-content">
         <header class="project-header">
@@ -311,20 +295,45 @@
 
         <div class="proj-links">
           <a class="btn" href="https://github.com/riwon-sys/ft_project" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
-          <a class="btn" href="https://www.canva.com/design/DAGm7UhNL1Q/0Hp-4CnUBg2g2sW9ogTKIg/view?utm_content=DAGm7UhNL1Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ec5deab99"
-             target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
+          <a class="btn" href="https://www.canva.com/design/DAGm7UhNL1Q/0Hp-4CnUBg2g2sW9ogTKIg/view?utm_content=DAGm7UhNL1Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ec5deab99" target="_blank" rel="noopener noreferrer">📑 발표자료(PPT)</a>
         </div>
       </div>
 
       <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="devconnect 프로젝트 로고">
-        <img src="./데브커넥트 로고.jpg" 
-             alt="devconnect 프로젝트 로고"
-             loading="lazy"
-             onload="this.parentElement.classList.remove('skeleton')" />
+        <img
+          src="./데브커넥트 로고.jpg"
+          alt="devconnect 프로젝트 로고"
+          loading="lazy"
+          onload="this.parentElement.classList.remove('skeleton')"
+        />
+        <figcaption class="project-caption">
+          <details class="more">
+            <summary>자세히 보기</summary>
+
+            <section class="project-section">
+              <h4>트러블슈팅</h4>
+              <ul class="project-points">
+                <li>기존 API와의 포맷 차이 → <strong>DTO 매핑 계층</strong>으로 호환성 확보</li>
+                <li>권한 분기 누락 → <strong>JWT + 보호 라우팅(RoleRoute)</strong> 재정립</li>
+              </ul>
+            </section>
+
+            <section class="project-section">
+              <h4>KPT 회고</h4>
+              <ul class="project-points">
+                <li>✅ <strong>Keep:</strong> 변경 최소화 원칙, 독립 배포 가능한 Admin Web</li>
+                <li>⚠️ <strong>Problem:</strong> 백엔드 미변경 제약으로 인한 우회 로직 증가</li>
+                <li>💡 <strong>Try:</strong> API 스펙 문서화 강화, 공통 컴포넌트/훅 리팩토링</li>
+              </ul>
+            </section>
+          </details>
+        </figcaption>
       </figure>
     </article>
+
   </div>
 </section>
+
 
     <!-- ========== 커리어 로드맵(요약) ========== -->
     <section id="career" class="section">
@@ -373,6 +382,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
