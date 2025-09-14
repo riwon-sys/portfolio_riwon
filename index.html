@@ -182,29 +182,31 @@
           loading="lazy"
           onload="this.parentElement.classList.remove('skeleton')"
         />
-        <figcaption class="project-caption">
-          <details class="more">
-            <summary>자세히 보기</summary>
-
-            <section class="project-section">
-              <h4>트러블슈팅</h4>
-              <ul class="project-points">
-                <li>DB 연결 불안정 → <strong>JNDI Connection Pool</strong> 적용 → CRUD 안정화</li>
-                <li>입력값 검증 누락 → <strong>DTO validate() + 폼 에러 피드백</strong> → UX 개선</li>
-              </ul>
-            </section>
-
-            <section class="project-section">
-              <h4>KPT 회고</h4>
-              <ul class="project-points">
-                <li>✅ <strong>Keep:</strong> 단독 개발, MVC/DAO 패턴 숙련</li>
-                <li>⚠️ <strong>Problem:</strong> 초기 드라이버 직접연결, 검증 로직 분산</li>
-                <li>💡 <strong>Try:</strong> 공통 검증/에러 처리 유틸화, 검색·페이징 보강</li>
-              </ul>
-            </section>
-          </details>
-        </figcaption>
       </figure>
+
+      <!-- ✅ 로고 아래 토글(figure 바깥, 형제 요소) -->
+      <div class="project-caption">
+        <details class="more">
+          <summary>자세히 보기</summary>
+
+          <section class="project-section">
+            <h4>트러블슈팅</h4>
+            <ul class="project-points">
+              <li>DB 연결 불안정 → <strong>JNDI Connection Pool</strong> 적용 → CRUD 안정화</li>
+              <li>입력값 검증 누락 → <strong>DTO validate() + 폼 에러 피드백</strong> → UX 개선</li>
+            </ul>
+          </section>
+
+          <section class="project-section">
+            <h4>KPT 회고</h4>
+            <ul class="project-points">
+              <li>✅ <strong>Keep:</strong> 단독 개발, MVC/DAO 패턴 숙련</li>
+              <li>⚠️ <strong>Problem:</strong> 초기 드라이버 직접연결, 검증 로직 분산</li>
+              <li>💡 <strong>Try:</strong> 공통 검증/에러 처리 유틸화, 검색·페이징 보강</li>
+            </ul>
+          </section>
+        </details>
+      </div>
     </article>
 
     <!-- ==================== workplatform ==================== -->
@@ -244,30 +246,31 @@
           loading="lazy"
           onload="this.parentElement.classList.remove('skeleton')"
         />
-        <figcaption class="project-caption">
-          <details class="more">
-            <summary>자세히 보기</summary>
-
-            <section class="project-section">
-              <h4>트러블슈팅</h4>
-              <ul class="project-points">
-                <li>토큰 만료 시 재인증 흐름 누락 → <strong>JWT 필터에서 만료/무효 분기</strong> + <strong>표준 오류 응답 JSON</strong> 정립</li>
-                <li>채팅 연결 끊김 → <strong>WebSocket 핑/퐁 + 재연결 백오프</strong> 적용</li>
-                <li>테스트 중 API 변경 추적 어려움 → <strong>Talend·Postman 시나리오</strong>로 회귀 테스트 자동화</li>
-              </ul>
-            </section>
-
-            <section class="project-section">
-              <h4>KPT 회고</h4>
-              <ul class="project-points">
-                <li>✅ <strong>Keep:</strong> 명세 선행 → 테스트 시나리오 기반 개발</li>
-                <li>⚠️ <strong>Problem:</strong> 초기 예외 응답 포맷 불일치</li>
-                <li>💡 <strong>Try:</strong> 공통 예외 핸들러/응답포맷, 부하 테스트 도입</li>
-              </ul>
-            </section>
-          </details>
-        </figcaption>
       </figure>
+
+      <div class="project-caption">
+        <details class="more">
+          <summary>자세히 보기</summary>
+
+          <section class="project-section">
+            <h4>트러블슈팅</h4>
+            <ul class="project-points">
+              <li>토큰 만료 시 재인증 흐름 누락 → <strong>JWT 필터에서 만료/무효 분기</strong> + <strong>표준 오류 응답 JSON</strong> 정립</li>
+              <li>채팅 연결 끊김 → <strong>WebSocket 핑/퐁 + 재연결 백오프</strong> 적용</li>
+              <li>테스트 중 API 변경 추적 어려움 → <strong>Talend·Postman 시나리오</strong>로 회귀 테스트 자동화</li>
+            </ul>
+          </section>
+
+          <section class="project-section">
+            <h4>KPT 회고</h4>
+            <ul class="project-points">
+              <li>✅ <strong>Keep:</strong> 명세 선행 → 테스트 시나리오 기반 개발</li>
+              <li>⚠️ <strong>Problem:</strong> 초기 예외 응답 포맷 불일치</li>
+              <li>💡 <strong>Try:</strong> 공통 예외 핸들러/응답포맷, 부하 테스트 도입</li>
+            </ul>
+          </section>
+        </details>
+      </div>
     </article>
 
     <!-- ==================== devconnect ==================== -->
@@ -306,29 +309,30 @@
           loading="lazy"
           onload="this.parentElement.classList.remove('skeleton')"
         />
-        <figcaption class="project-caption">
-          <details class="more">
-            <summary>자세히 보기</summary>
-
-            <section class="project-section">
-              <h4>트러블슈팅</h4>
-              <ul class="project-points">
-                <li>기존 API와의 포맷 차이 → <strong>DTO 매핑 계층</strong>으로 호환성 확보</li>
-                <li>권한 분기 누락 → <strong>JWT + 보호 라우팅(RoleRoute)</strong> 재정립</li>
-              </ul>
-            </section>
-
-            <section class="project-section">
-              <h4>KPT 회고</h4>
-              <ul class="project-points">
-                <li>✅ <strong>Keep:</strong> 변경 최소화 원칙, 독립 배포 가능한 Admin Web</li>
-                <li>⚠️ <strong>Problem:</strong> 백엔드 미변경 제약으로 인한 우회 로직 증가</li>
-                <li>💡 <strong>Try:</strong> API 스펙 문서화 강화, 공통 컴포넌트/훅 리팩토링</li>
-              </ul>
-            </section>
-          </details>
-        </figcaption>
       </figure>
+
+      <div class="project-caption">
+        <details class="more">
+          <summary>자세히 보기</summary>
+
+          <section class="project-section">
+            <h4>트러블슈팅</h4>
+            <ul class="project-points">
+              <li>기존 API와의 포맷 차이 → <strong>DTO 매핑 계층</strong>으로 호환성 확보</li>
+              <li>권한 분기 누락 → <strong>JWT + 보호 라우팅(RoleRoute)</strong> 재정립</li>
+            </ul>
+          </section>
+
+          <section class="project-section">
+            <h4>KPT 회고</h4>
+            <ul class="project-points">
+              <li>✅ <strong>Keep:</strong> 변경 최소화 원칙, 독립 배포 가능한 Admin Web</li>
+              <li>⚠️ <strong>Problem:</strong> 백엔드 미변경 제약으로 인한 우회 로직 증가</li>
+              <li>💡 <strong>Try:</strong> API 스펙 문서화 강화, 공통 컴포넌트/훅 리팩토링</li>
+            </ul>
+          </section>
+        </details>
+      </div>
     </article>
 
   </div>
@@ -382,6 +386,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
