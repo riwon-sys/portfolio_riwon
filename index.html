@@ -116,20 +116,20 @@
                 <ul class="project-points">
                     <li>
                         <strong>초기(1~3개월):</strong>
-                        Java(144h), Oracle DB(40h), Git(8h),
-                        HTML/CSS/JS/jQuery(72h), JSP/Servlet(32h), EL/JSTL(24h), AJAX(24h),
-                        Spring Framework/Spring Boot/MyBatis(64h), MSA 기초(32h),
-                        미니프로젝트Ⅰ(고객관리, 40h)
+                        Java, Oracle DB, Git,
+                        HTML/CSS/JS/jQuery, JSP/Servlet, EL/JSTL, AJAX,
+                        Spring Framework/Spring Boot/MyBatis, MSA 기초,
+                        미니프로젝트Ⅰ(고객관리)
                     </li>
                     <li>
                         <strong>중기(4~6개월):</strong>
-                        쇼핑몰 프로젝트(104h), Node.js/Express(40h), React(32h),
-                        SNS 프로젝트(48h), 리눅스 서버 운영(32h), 클라우드 배포(32h),
-                        웹 보안/시큐어 코딩(24h)
+                        쇼핑몰 프로젝트, Node.js/Express, React,
+                        SNS 프로젝트, 리눅스 서버 운영, 클라우드 배포,
+                        웹 보안/시큐어 코딩
                     </li>
                     <li>
                         <strong>후기(7개월):</strong>
-                        Flutter(Dart) 8h+72h, 앱 개발 프로젝트 88h+20h, 재량교과(20h)
+                        Flutter(Dart), 앱 개발 프로젝트, 재량교과
                     </li>
                 </ul>
                 <p class="project-desc">
@@ -146,28 +146,41 @@
   <div class="container">
     <h2 class="section-title">프로젝트</h2>
 
-    <!-- AssetKeeper -->
-    <article class="project-card">
-      <div class="project-content">
-        <header class="project-header">
-          <h3>AssetKeeper (개인 프로젝트)</h3>
-          <span class="project-meta">Java, JSP, MVC, MySQL</span>
-        </header>
+   <!-- AssetKeeper -->
+<article class="project-card">
+  <div class="project-content">
+    <header class="project-header">
+      <h3>AssetKeeper (개인 프로젝트)</h3>
+      <span class="project-meta">Java, JSP, MVC, MySQL</span>
+    </header>
 
-        <p class="project-desc">
-          Java·JSP 기반의 웹 애플리케이션으로 CRUD 기능을 직접 설계/구현했습니다.
-          요청 → 컨트롤러 → DAO → DB 연동 흐름을 경험하며 MVC 구조의 장단점을 체감했고,
-          DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
-        </p>
+    <p class="project-desc">
+      Java·JSP 기반의 <strong>비품(자산) 관리 CRUD</strong> 웹 애플리케이션을 설계·구현했습니다.<br>
+      요청 → Controller → DAO → DB 연동 흐름을 직접 구축하며 MVC 구조의 장단점을 체감했고,<br>
+      DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
+    </p>
 
-        <ul class="project-points">
-          <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
-          <li><strong>핵심:</strong> Controller→DAO→DB CRUD 플로우 정립, MVC 패턴 적용</li>
-          <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
-          <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
-          <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
-          <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리/유효성 검증의 중요성</li>
-        </ul>
+    <ul class="project-points">
+      <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
+      <li><strong>핵심:</strong> Controller → DAO → DB CRUD 플로우 정립, MVC 패턴 적용</li>
+      <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
+      <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
+      <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
+      <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리 및 유효성 검증의 중요성</li>
+    </ul>
+
+    <h4>트러블슈팅 사례</h4>
+    <ul class="project-points">
+      <li>DB 연결 불안정 → <strong>Connection Pool 도입</strong> → CRUD 안정화</li>
+      <li>입력값 검증 누락 → <strong>Validation 강화</strong> → 사용자 경험 개선</li>
+    </ul>
+
+    <h4>KPT 회고</h4>
+    <ul class="project-points">
+      <li>✅ <strong>Keep:</strong> 단독 개발 경험, MVC 패턴 이해 심화</li>
+      <li>⚠️ <strong>Problem:</strong> 예외 처리·검증 미흡, DB 안정성 부족</li>
+      <li>💡 <strong>Try:</strong> 공통 검증 로직 설계, Connection Pool 적극 활용</li>
+    </ul>
 
         <div class="proj-links">
           <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub 저장소</a>
@@ -310,6 +323,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
