@@ -146,25 +146,56 @@
   <div class="container">
     <h2 class="section-title">프로젝트</h2>
 
-   <!-- AssetKeeper (Compact) -->
+   <!-- AssetKeeper -->
 <article class="project-card">
-  <header class="project-header">
-    <h3>AssetKeeper (개인 프로젝트)</h3>
-    <span class="project-meta">Java, JSP, MVC, MySQL</span>
-  </header>
+  <div class="project-content">
+    <header class="project-header">
+      <h3>AssetKeeper (개인 프로젝트)</h3>
+      <span class="project-meta">Java, JSP, MVC, MySQL</span>
+    </header>
 
-  <p class="project-desc">
-    <strong>비품(자산) 관리 CRUD</strong>를 중심으로 MVC 흐름(Controller → DAO → DB)을 직접 구축했습니다.
-    DB 설계부터 화면 연동까지 <strong>전 과정 단독 수행</strong>.
-  </p>
+    <p class="project-desc">
+      Java·JSP 기반의 <strong>비품(자산) 관리 CRUD</strong> 웹 애플리케이션을 설계·구현했습니다.<br>
+      요청 → Controller → DAO → DB 연동 흐름을 직접 구축하며 MVC 구조의 장단점을 체감했고,<br>
+      DB 설계부터 화면 연동까지 전 과정을 수행했습니다.
+    </p>
 
-  <ul class="project-points">
-    <li><strong>기간:</strong> 25-02-03 ~ 25-02-23</li>
-    <li><strong>핵심:</strong> CRUD 플로우 정립 · MVC 패턴 적용 · JNDI 커넥션 풀</li>
-    <li><strong>역할:</strong> 스키마/SQL · DAO · JSP 화면 · 배포</li>
-  </ul>
+    <ul class="project-points">
+      <li><strong>제작기간:</strong> 25-02-03 ~ 25-02-23</li>
+      <li><strong>핵심:</strong> Controller → DAO → DB CRUD 플로우 정립, MVC 패턴 적용</li>
+      <li><strong>역할:</strong> 스키마 설계, DAO/SQL 작성, JSP 화면 연동</li>
+      <li><strong>연동/기술:</strong> Java, JSP, MySQL 기반 CRUD, MVC 구조 설계</li>
+      <li><strong>협업:</strong> 개인 프로젝트로 전체 개발 전담</li>
+      <li><strong>배움:</strong> 계층 분리와 의존성 최소화, 예외 처리 및 유효성 검증의 중요성</li>
+    </ul>
 
-  <details>
+    <h4>트러블슈팅 사례</h4>
+    <ul class="project-points">
+      <li>DB 연결 불안정 → <strong>Connection Pool 도입</strong> → CRUD 안정화</li>
+      <li>입력값 검증 누락 → <strong>Validation 강화</strong> → 사용자 경험 개선</li>
+    </ul>
+
+    <h4>KPT 회고</h4>
+    <ul class="project-points">
+      <li>✅ <strong>Keep:</strong> 단독 개발 경험, MVC 패턴 이해 심화</li>
+      <li>⚠️ <strong>Problem:</strong> 예외 처리·검증 미흡, DB 안정성 부족</li>
+      <li>💡 <strong>Try:</strong> 공통 검증 로직 설계, Connection Pool 적극 활용</li>
+    </ul>
+  </div>
+
+    <div class="proj-links">
+      <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+      <a class="btn" href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h" target="_blank" rel="noopener noreferrer">📑 발표자료</a>
+    </div>
+
+
+     <figure class="project-media media--logo ratio-1x1 skeleton" aria-label="AssetKeeper 프로젝트 로고">
+        <img src="./에셋 로고.jpg" 
+             alt="AssetKeeper 프로젝트 로고"
+             loading="lazy"
+             onload="this.parentElement.classList.remove('skeleton')" />
+
+         <details>
     <summary>자세히 보기</summary>
     <section class="project-section">
       <h4>트러블슈팅</h4>
@@ -182,17 +213,11 @@
         <li>💡 <strong>Try:</strong> 공통 검증/에러 처리 유틸화, 검색·페이징 보강</li>
       </ul>
     </section>
-
-    <div class="proj-links">
-      <a class="btn" href="https://github.com/riwon-sys/AssetKeeper" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
-      <a class="btn" href="https://gamma.app/docs/Copy-of-AssetKeeper-b365ptouxsfcy2h" target="_blank" rel="noopener noreferrer">📑 발표자료</a>
-    </div>
-
-    <figure class="project-media media--logo ratio-1x1">
-      <img src="./에셋키퍼 로고.jpg" alt="AssetKeeper 로고" loading="lazy" />
-    </figure>
-  </details>
+</details>
+      </figure>
 </article>
+
+  
 
     <!-- workplatform -->
     <article class="project-card">
@@ -231,6 +256,7 @@
              alt="workplatform 프로젝트 로고"
              loading="lazy"
              onload="this.parentElement.classList.remove('skeleton')" />
+          
       </figure>
     </article>
 
@@ -321,6 +347,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
