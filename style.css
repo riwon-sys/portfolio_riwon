@@ -163,7 +163,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   content: "•"; position: absolute; left: -10px; top: 0; color: #92a0b3;
 }
 
-/* Links */
+/* Buttons */
 .proj-links{ margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
 .btn{
   display: inline-flex; align-items: center; gap: 6px;
@@ -236,6 +236,15 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 .more[open]{ padding-bottom: 8px; }
 .more .project-section{ padding: 10px 12px 0; }
 .more .project-section:last-child{ padding-bottom: 8px; }
+
+/* details 내부 텍스트 가독성 */
+.project-card details p,
+.project-card details li{
+  line-height: 1.6;
+  white-space: normal;
+  word-break: keep-all;
+  margin: 6px 0;
+}
 
 /* =========================
    “자세히 보기” – 카드형 & SAR/KPT
@@ -342,7 +351,7 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 
 /* =========================
-   Print (optional, 깔끔 출력)
+   Print (optional)
 ========================= */
 @media print{
   .site-header, .nav, .proj-links, .project-media.skeleton::after{ display: none !important; }
