@@ -267,23 +267,47 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 
 /* SAR (상황/행동/결과) */
-.sar-list{ counter-reset: step; display: grid; gap: 12px; margin-top: 8px; }
+.sar-list{
+  list-style: none;        /* ← ol/li 기본 넘버 숨김 */
+  padding-left: 0;         /* ← 여백 제거 */
+  counter-reset: step;
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
+}
+
 .sar-list > li{
-  background: var(--chip-bg); border: 1px solid var(--chip-border);
-  border-radius: 10px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.03);
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-border);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.03);
 }
+
+/* 커스텀 번호 (#1, #2 …) */
 .sar-list > li::before{
-  counter-increment: step; content: "#" counter(step);
-  font-weight: 700; margin-right: 8px; color: #7b8a9b;
+  counter-increment: step;
+  content: "#" counter(step);
+  font-weight: 700;
+  margin-right: 8px;
+  color: #7b8a9b;
 }
+
 .sar{
-  display: grid; grid-template-columns: 88px 1fr;
-  gap: 6px 12px; align-items: start;
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 6px 12px;
+  align-items: start;
 }
 .sar__label{
-  font-weight: 700; color: #556070; background: #eef2f6;
-  border: 1px solid #e1e7ef; border-radius: 6px;
-  padding: 2px 8px; text-align: center; line-height: 1.8;
+  font-weight: 700;
+  color: #556070;
+  background: #eef2f6;
+  border: 1px solid #e1e7ef;
+  border-radius: 6px;
+  padding: 2px 8px;
+  text-align: center;
+  line-height: 1.8;
 }
 @media (prefers-color-scheme: dark){
   .sar__label{ background:#151a22; border-color:#202531; color:#b7c2d0; }
@@ -358,3 +382,4 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 8px); }
   body{ background: #fff; padding-top: 0; }
   .section{ page-break-inside: avoid; }
 }
+
