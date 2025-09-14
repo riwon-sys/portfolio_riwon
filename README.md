@@ -21,24 +21,7 @@ Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해
 
 ## 📌 주요 프로젝트
 
-### 1. DevConnect Admin Web
-> 관리자 전용 React 웹 (Spring Boot + React + JWT + Redis)  
-- 기업·개발자·프로젝트·평가 관리 대시보드 구현  
-- Joy UI + Recharts 기반 통계 시각화  
-- JWT 인증 + Role Route 보호 라우팅 적용  
-
-**트러블슈팅 사례**  
-- FormData 업로드 오류 → @ModelAttribute + multipart 적용 → 이미지 정상 처리  
-- 권한 라우팅 충돌 → PrivateRoute + RoleRoute 개선 → 접근 제어 강화  
-
-**KPT 회고**  
-- ✅ Keep: 독립적인 Admin Web 구축, Redis 연동 경험  
-- ⚠️ Problem: 초기 FormData 처리 및 라우팅 충돌  
-- 💡 Try: 테스트 케이스 확충, Redis 설정/모니터링 강화  
-
----
-
-### 2. ERP SYS (AssetKeeper)
+### 1. ERP SYS (AssetKeeper)
 > 소규모 스타트업용 ERP 시스템  
 - 인사·자산·출결·회계 관리 모듈 설계 및 구현  
 - Spring Boot + MySQL + JSP (초기 버전) → React/Flutter 확장  
@@ -54,7 +37,7 @@ Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해
 
 ---
 
-### 3. WorkPlatform
+### 2. WorkPlatform
 > Spring Boot + React 기반 팀 협업 프로젝트  
 - JWT 인증 기반 사원 관리 시스템  
 - RBAC(Role-Based Access Control) 기반 권한별 메뉴 제어  
@@ -68,7 +51,24 @@ Spring Boot · React · Flutter 기반의 웹/앱 프로젝트 경험을 통해
 **KPT 회고**  
 - ✅ Keep: JWT 인증/인가 구현, Redux Persist 적용 성공  
 - ⚠️ Problem: 협업 규칙 미흡, Redux 디버깅 어려움  
-- 💡 Try: 브랜치 전략·컨벤션 강화, 사전 학습 후 적용  
+- 💡 Try: 브랜치 전략·컨벤션 강화, 사전 학습 후 적용   
+
+---
+
+### 3. DevConnect Admin Web
+> 관리자 전용 React 웹 (Spring Boot + React + JWT + Redis)  
+- 기업·개발자·프로젝트·평가 관리 대시보드 구현  
+- Joy UI + Recharts 기반 통계 시각화  
+- JWT 인증 + Role Route 보호 라우팅 적용  
+
+**트러블슈팅 사례**  
+- FormData 업로드 오류 → @ModelAttribute + multipart 적용 → 이미지 정상 처리  
+- 권한 라우팅 충돌 → PrivateRoute + RoleRoute 개선 → 접근 제어 강화  
+
+**KPT 회고**  
+- ✅ Keep: 독립적인 Admin Web 구축, Redis 연동 경험  
+- ⚠️ Problem: 초기 FormData 처리 및 라우팅 충돌  
+- 💡 Try: 테스트 케이스 확충, Redis 설정/모니터링 강화  
 
 ---
 
